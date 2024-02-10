@@ -3,6 +3,7 @@
   display: inline-block;
   text-decoration: none;
   color: var(--main-black-color);
+  font-weight: bold;
 
   &:hover::after {
     width: 100%;
