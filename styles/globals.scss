@@ -5,6 +5,7 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
+  --main-blue-color: #5cc2f2;
   --main-black-color: #000000;
   --main-white-color: #ffffff;
   --main-text-color: #1a1a1a;
@@ -30,7 +31,6 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
   background-color: var(--main-white-color);
   color: var(--main-black-color);
 }

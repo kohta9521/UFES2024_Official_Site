@@ -1,0 +1,29 @@
+.contactBtn {
+  background-color: var(--main-blue-color);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+
+  &:hover {
+    background-color: #009bff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 768px) {
+}
