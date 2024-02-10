@@ -1,4 +1,6 @@
 import Link from "next/link";
+
+// scss import
 import styles from "./styles/HeaderListItem.module.scss";
 
 export type HeaderListItemProps = {

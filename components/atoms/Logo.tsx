@@ -1,6 +1,8 @@
 import Link from "next/link";
-import styles from "./styles/Logo.module.scss";
 import Image from "next/image";
+
+// scss import
+import styles from "./styles/Logo.module.scss";
 
 export type LogoProps = {
   id: number;
