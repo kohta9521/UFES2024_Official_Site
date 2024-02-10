@@ -1,0 +1,20 @@
+.logoLinkBox {
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  .logoImg {
+    height: auto;
+  }
+}
+
+.small {
+  width: 200px;
+}
+.medium {
+  width: 235px;
+}
+.large {
+  width: 300px;
+}
