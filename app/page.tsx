@@ -5,6 +5,7 @@ import styles from "../styles/page.module.scss";
 // components import
 import Loading from "../components/templates/Loading";
 import Header from "@/components/organisms/Header";
+import Hero from "@/components/organisms/Hero";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +26,7 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <Header />
+      <Hero />
     </div>
   );
 }
