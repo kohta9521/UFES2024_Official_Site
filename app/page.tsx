@@ -6,6 +6,8 @@ import styles from "../styles/page.module.scss";
 import Loading from "../components/templates/Loading";
 import Header from "@/components/organisms/Header";
 import Hero from "@/components/organisms/Hero";
+import Footer from "@/components/organisms/Footer";
+import GreetSection from "@/components/organisms/GreetSection";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,6 +29,8 @@ export default function Home() {
     <div className={styles.main}>
       <Header />
       <Hero />
+      <GreetSection />
+      <Footer />
     </div>
   );
 }
