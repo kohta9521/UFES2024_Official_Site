@@ -8,9 +8,9 @@ import ContactBtn from "../atoms/ContactBtn";
 const ListBox = () => {
   return (
     <div className={styles.listBox}>
-      <HeaderListItem id={1} text="Home" link="/" />
-      <HeaderListItem id={1} text="Home" link="/" />
-      <HeaderListItem id={1} text="Home" link="/" />
+      <HeaderListItem id={1} text="Top" link="/" />
+      <HeaderListItem id={1} text="参加団体・企業" link="/" />
+      <HeaderListItem id={1} text="当日の流れ" link="/" />
       <ContactBtn id={1} text="お問い合わせ" link="/contact" />
     </div>
   );

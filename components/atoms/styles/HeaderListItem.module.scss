@@ -1,9 +1,22 @@
 .linkBox {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
-  .listText {
-    font-weight: 500;
-    color: #000000;
-    text-decoration: none;
+  color: var(--main-black-color);
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-blue-color); // アンダーラインの色
+    transition: width 0.3s ease; // 幅の変化にトランジションを適用
   }
 }
 
