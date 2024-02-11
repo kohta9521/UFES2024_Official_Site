@@ -1,5 +1,9 @@
+import Image from "next/image";
+
+// spline
+// import Spline from "@splinetool/react-spline";
+
 // scss import
-import Link from "next/link";
 import styles from "./styles/Hero.module.scss";
 
 // components import
@@ -7,25 +11,29 @@ import styles from "./styles/Hero.module.scss";
 const Hero = () => {
   return (
     <div className={styles.hero}>
-      <div className={styles.container}>
-        <div className={styles.leftBox}>
-          <div className={styles.circleBackground}></div>
-        </div>
-        <div className={styles.rightBox}>
-          <h1 className={styles.heroTitle}>
-            <span className={styles.blueAccentColor}>新歓</span>に革命を
+      <div className={styles.leftBox}></div>
+      <div className={styles.rightBox}></div>
+      {/* <div className={styles.container}>
+        <div className={styles.topBox}>
+          <h1 className={styles.title}>
+            <span className={styles.accentBlue}>新歓</span>に革命を起こす
           </h1>
-          <h2 className={styles.heroSubTitle}>
+          <h2 className={styles.subTitle}>
             大学生活を充実させるためのファーストイベント
+            <br />
+            ４年間という大学生活を充実させる出会いを提供します
           </h2>
-          <p className={styles.bgTextBox}>
-            2024 / 4 / 7 16:00 ~　　 六本木ヒルズホール
-          </p>
-          <Link href={"/"} className={styles.entryBtn}>
-            申し込む
-          </Link>
         </div>
       </div>
+      <div className={styles.bottomBox}>
+        <Image
+          className={styles.heroImage}
+          src="/images/sub.jpg"
+          alt="hero"
+          width={1000}
+          height={1000}
+        />
+      </div> */}
     </div>
   );
 };

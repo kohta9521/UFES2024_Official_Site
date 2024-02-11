@@ -1,0 +1,39 @@
+// components/AutoSlideImage.module.scss
+.slider {
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 200px; // 必要に応じて調整
+  margin-bottom: 20px;
+}
+
+.slideTrack {
+  display: flex;
+  width: calc(300px * 6); // 画像の幅 * 画像の数（繰り返し分も考慮）
+  animation: slide 30s linear infinite; // 10秒でスライドを繰り返し
+}
+
+.slide {
+  display: flex;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 200px; // 画像の幅
+  padding: 30px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(
+      -50%
+    ); // 半分スライドさせる（複製した分で無限ループを実現）
+  }
+}
