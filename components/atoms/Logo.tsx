@@ -16,8 +16,8 @@ const Logo = ({ id, size = "medium", link }: LogoProps) => {
       <Image
         className={`${styles.logoImg} ${styles[size]}`}
         src={"/images/logo.png"}
-        width={235}
-        height={50}
+        width={230}
+        height={45}
         alt="logo"
       />
     </Link>

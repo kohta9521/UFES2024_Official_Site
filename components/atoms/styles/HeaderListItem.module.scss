@@ -4,6 +4,7 @@
   text-decoration: none;
   color: var(--main-black-color);
   font-weight: bold;
+  margin-right: 40px;
 
   &:hover::after {
     width: 100%;
@@ -24,6 +25,14 @@
 .small {
 }
 .medium {
+  font-size: 14px;
+  font-weight: 700;
 }
 .large {
+}
+
+@media screen and (max-width: 1280px) {
+  .linkBox {
+    display: none;
+  }
 }

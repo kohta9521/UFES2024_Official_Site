@@ -7,11 +7,16 @@ export type ContactBtnProps = {
   id: number;
   text: string;
   link: string;
+  color?: "blue" | "gray";
 };
 
-const ContactBtn = ({ id, text, link }: ContactBtnProps) => {
+const ContactBtn = ({ id, text, link, color = "blue" }: ContactBtnProps) => {
   return (
-    <Link key={id} href={link} className={styles.contactBtn}>
+    <Link
+      key={id}
+      href={link}
+      className={`${styles.contactBtn} ${styles[color]}`}
+    >
       {text}
     </Link>
   );

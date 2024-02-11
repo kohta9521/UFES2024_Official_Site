@@ -1,28 +1,37 @@
 .contactBtn {
-  background-color: var(--main-blue-color);
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  transition:
-    transform 0.3s ease,
-    background-color 0.3s ease;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 1px;
-  outline: none;
+  background-color: #007bff; // 青色の背景
+  color: #ffffff; // 白色のテキスト
+  padding: 13px 23px; // ボタンの内側の余白
+  font-size: 14px; // テキストのサイズ
+  font-weight: 700;
+  border-radius: 40px; // 丸みを帯びた角
+  border: none; // 枠線なし
+  cursor: pointer; // ホバー時にカーソルをポインターに変更
+  transition: background-color 0.3s ease; // 背景色の変更にアニメーションを適用
+  text-align: center; // テキストを中央揃え
+  display: inline-block; // インラインブロック要素として表示
+  text-decoration: none; // 下線を消去
+  margin-right: 13px;
 
-  &:hover {
-    background-color: #009bff;
-  }
+  //   &:hover {
+  //     background-color: darken(#007bff, 10%); // ホバー時には背景色を暗くする
+  //   }
 
-  &:focus {
-    outline: none;
+  &:active {
+    transform: translateY(2px); // アクティブ時にボタンを軽く下に移動
   }
+}
+.blue {
+  background-color: #007bff;
+}
+.gray {
+  background-color: #4a4a4a;
 }
 
 @media screen and (max-width: 1280px) {
+  .contactBtn {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {

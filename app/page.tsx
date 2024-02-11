@@ -8,6 +8,9 @@ import Header from "@/components/organisms/Header";
 import Hero from "@/components/organisms/Hero";
 import Footer from "@/components/organisms/Footer";
 import GreetSection from "@/components/organisms/GreetSection";
+import About from "@/components/organisms/About";
+import AutoSlideImage from "@/components/organisms/AutoSlideImage";
+import News from "@/components/organisms/News";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,7 +32,10 @@ export default function Home() {
     <div className={styles.main}>
       <Header />
       <Hero />
+      <AutoSlideImage />
+      <News />
       <GreetSection />
+      <About />
       <Footer />
     </div>
   );
