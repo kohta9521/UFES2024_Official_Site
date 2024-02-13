@@ -5,9 +5,9 @@ import "../styles/globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "New Wave | 新歓合同イベント",
+  title: "UFES 2024 | 新歓合同イベント",
   description:
-    "4/7 六本木ヒルズにて開催決定!! 大学1年生のための合同新歓イベント New Wave。最高の4年間を過ごすための最高のスタートダッシュをきれる場を提供します。",
+    "4/5 六本木ヒルズにて開催決定!! 大学1年生のための合同新歓イベント UFES。最高の4年間を過ごすための最高のスタートダッシュをきれる場を提供します。",
 };
 
 export default function RootLayout({
