@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+.scroll {
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+  width: 6%;
+  height: 50px;
+  text-align: center;
+  &__text {
+    color: var(--main-pink);
+    font-size: 14px;
+    margin-bottom: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+  }
+  &__icon {
+    animation: bounce 2s infinite;
+    font-size: 1rem;
+    color: var(--main-pink);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

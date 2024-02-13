@@ -26,10 +26,10 @@ const Loading: React.FC = () => {
       {loading && (
         <div className={styles.logo}>
           <Image
-            src="/images/logo.png"
+            src="/images/heroTitle.png"
             alt="event logo"
-            width={235}
-            height={50}
+            width={200}
+            height={170}
           />
         </div>
       )}

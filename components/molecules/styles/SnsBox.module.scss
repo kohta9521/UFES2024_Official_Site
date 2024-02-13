@@ -1,0 +1,23 @@
+.box {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 100px;
+  height: 500px;
+  text-align: center;
+  .verticalBorder {
+    display: block;
+    margin: 0 auto;
+    width: 1px;
+    height: 200px;
+    margin-bottom: 30px;
+    background-color: var(--main-white-color);
+  }
+  .snsIcon {
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+}
