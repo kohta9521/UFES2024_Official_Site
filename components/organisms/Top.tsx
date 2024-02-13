@@ -7,6 +7,7 @@ import styles from "./styles/Top.module.scss";
 // components import
 import TopVerticalText from "../atoms/TopVerticalText";
 import ScrollDownText from "../atoms/ScrollDownText";
+import TopListBox from "../molecules/TopListBox";
 
 const Top = () => {
   return (
@@ -25,6 +26,7 @@ const Top = () => {
           height={280}
         />
       </div>
+      <TopListBox />
       <ScrollDownText />
     </div>
   );
