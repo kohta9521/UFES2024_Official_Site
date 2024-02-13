@@ -8,6 +8,7 @@ import styles from "./styles/Top.module.scss";
 import TopVerticalText from "../atoms/TopVerticalText";
 import ScrollDownText from "../atoms/ScrollDownText";
 import TopListBox from "../molecules/TopListBox";
+import SnsBox from "../molecules/SnsBox";
 
 const Top = () => {
   return (
@@ -27,6 +28,7 @@ const Top = () => {
         />
       </div>
       <TopListBox />
+      <SnsBox />
       <ScrollDownText />
     </div>
   );
