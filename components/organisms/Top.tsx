@@ -21,10 +21,10 @@ const Top = () => {
       <div className={styles.centerTitleImage}>
         <Image
           className={styles.center}
-          src="/images/heroTitle.png"
+          src="/images/bg_white_logo.png"
           alt="centerTitleImage"
-          width={420}
-          height={280}
+          width={430}
+          height={350}
         />
       </div>
       <TopListBox />
