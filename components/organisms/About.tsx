@@ -27,7 +27,7 @@ const About = () => {
           </p>
           <p className={styles.enMainText}>
             UFES is a joint welcome event for student groups that was set up to
-            make the "Spring University Student Fest" a part of the culture.
+            make the Spring University Student Fest a part of the culture.
             Student groups that are not affiliated with a university have been
             holding their own events. We aim to create new chemical reactions
             and horizontal connections among student groups by bringing together
