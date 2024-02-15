@@ -1,8 +1,8 @@
 // scss import
-import SectionTitle from "../atoms/SectionTitle";
 import styles from "./styles/About.module.scss";
 
 // components import
+import SectionTitle from "../atoms/SectionTitle";
 
 const About = () => {
   return (
