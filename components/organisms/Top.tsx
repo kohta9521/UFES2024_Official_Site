@@ -23,8 +23,8 @@ const Top = () => {
           className={styles.center}
           src="/images/bg_white_logo.png"
           alt="centerTitleImage"
-          width={430}
-          height={350}
+          width={500}
+          height={400}
         />
       </div>
       <TopListBox />

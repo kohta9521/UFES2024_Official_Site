@@ -12,6 +12,8 @@ import BgImage from "@/components/organisms/BgImage";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  // 画面上のブラーの状態変数
+  // const [isBlurred, setIsBlurred] = useState(false);
 
   useEffect(() => {
     // ローディングが完了したらisLoadingをfalseに設定
@@ -29,7 +31,9 @@ export default function Home() {
     <div className={styles.main}>
       <BgImage />
       <Top />
-      <About />
+      <div id="blurTarget">
+        <About />
+      </div>
     </div>
   );
 }

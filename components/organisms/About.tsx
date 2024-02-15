@@ -6,7 +6,7 @@ import SectionTitle from "../atoms/SectionTitle";
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="blurTarget">
       <div className={styles.container}>
         <SectionTitle
           id={1}
