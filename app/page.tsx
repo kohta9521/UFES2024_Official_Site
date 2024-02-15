@@ -1,32 +1,30 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 // scss import
 import styles from "../styles/page.module.scss";
 
 // components import
-import Loading from "../components/templates/Loading";
+// import Loading from "../components/templates/Loading";
 import Top from "@/components/organisms/Top";
 import About from "@/components/organisms/About";
 import BgImage from "@/components/organisms/BgImage";
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
-  // 画面上のブラーの状態変数
-  // const [isBlurred, setIsBlurred] = useState(false);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    // ローディングが完了したらisLoadingをfalseに設定
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000); // 1秒後にローディングを非表示にする
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 1000);
 
-    return () => clearTimeout(timer); // コンポーネントのアンマウント時にタイマーをクリア
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
-  if (isLoading) {
-    return <Loading />;
-  }
+  // if (isLoading) {
+  //   return <Loading />;
+  // }
+
   return (
     <div className={styles.main}>
       <BgImage />

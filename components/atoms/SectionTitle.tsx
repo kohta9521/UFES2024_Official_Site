@@ -1,4 +1,5 @@
 // scss import
+import useAOS from "@/hooks/useAOS";
 import styles from "./styles/SectionTitle.module.scss";
 
 export type SectionTitleProps = {
@@ -16,8 +17,10 @@ const SectionTitle = ({
   color = "black",
   align = "center",
 }: SectionTitleProps) => {
+  useAOS();
   return (
     <h2
+      data-aos="fade-up"
       key={id}
       id={idName}
       className={`${styles.sectionTitle} ${styles[color]} ${styles[align]}`}
