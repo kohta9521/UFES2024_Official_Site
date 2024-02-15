@@ -5,17 +5,16 @@
   width: 100vw;
   padding: 100px 0;
   z-index: 2;
-  border: 1px solid red;
 
   .container {
-    width: 50%;
+    width: 45%;
     height: 100%;
     margin: 0 auto;
-    border: 1px solid red;
+
     .mainTextBox {
       width: 100%;
       margin-top: 50px;
-      border: 1px solid red;
+
       .titleText {
         font-size: 24px;
         line-height: 40px;
@@ -46,7 +45,6 @@
     .underBox {
       width: 100%;
       display: flex;
-      border: 1px solid red;
       .leftBox {
         .mainName {
           font-size: 28px;
@@ -71,17 +69,137 @@
 
 @media screen and (max-width: 1280px) {
   .about {
-    padding: 80px;
+    position: absolute;
+    width: 100vw;
+    padding: 100px 0;
+    z-index: 2;
+
     .container {
-      width: 80%;
+      width: 70%;
+      height: 100%;
+      margin: 0 auto;
+
+      .mainTextBox {
+        width: 100%;
+        margin-top: 50px;
+
+        .titleText {
+          font-size: 24px;
+          line-height: 40px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        .mainText {
+          display: block;
+          margin-bottom: 30px;
+          font-size: 16px;
+          letter-spacing: 0.64px;
+          font-weight: 550;
+          line-height: 30px;
+        }
+        .enMainText {
+          color: #383838;
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
+      .underBorder {
+        display: block;
+        width: 200px;
+        height: 1.5px;
+        background-color: var(--main-pink);
+        margin: 20px 0;
+      }
+      .underBox {
+        width: 100%;
+        display: flex;
+        border: 1px solid red;
+        .leftBox {
+          .mainName {
+            font-size: 28px;
+            font-family: "Share Tech Mono", monospace;
+          }
+          .name {
+            display: block;
+            margin-top: 22px;
+            font-family: "Share Tech Mono", monospace;
+            font-size: 18px;
+            line-height: 40px;
+          }
+          .enName {
+            font-family: "Share Tech Mono", monospace;
+            font-size: 12px;
+            color: #383838;
+          }
+        }
+      }
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   .about {
-    padding: 50px;
+    position: absolute;
+    width: 100vw;
+    padding: 100px 0;
+    z-index: 2;
+
     .container {
       width: 90%;
+      height: 100%;
+      margin: 0 auto;
+      .mainTextBox {
+        width: 100%;
+        margin-top: 50px;
+        .titleText {
+          font-size: 20px;
+          line-height: 25px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        .mainText {
+          display: block;
+          margin-bottom: 30px;
+          font-size: 14px;
+          letter-spacing: 0.64px;
+          font-weight: 550;
+          line-height: 25px;
+        }
+        .enMainText {
+          color: #383838;
+          font-size: 10px;
+          line-height: 17px;
+        }
+      }
+      .underBorder {
+        display: block;
+        width: 200px;
+        height: 1.5px;
+        background-color: var(--main-pink);
+        margin: 20px 0;
+      }
+      .underBox {
+        width: 100%;
+        display: flex;
+        .leftBox {
+          .mainName {
+            font-size: 25px;
+            font-family: "Share Tech Mono", monospace;
+          }
+          .name {
+            display: block;
+            margin-top: 20px;
+            font-family: "Share Tech Mono", monospace;
+            font-size: 16px;
+            line-height: 30px;
+          }
+          .enName {
+            font-family: "Share Tech Mono", monospace;
+            font-size: 10px;
+            color: #383838;
+          }
+        }
+      }
     }
   }
 }
