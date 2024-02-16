@@ -35,10 +35,10 @@ const Top = () => {
         <Image
           data-aos="fade-up"
           className={styles.center}
-          src="/images/bg_white_logo.png"
+          src="/images/bg_white_logo2.png"
           alt="centerTitleImage"
-          width={500}
-          height={400}
+          width={800}
+          height={700}
         />
       </div>
       <TopListBox />

@@ -6,6 +6,7 @@ import SectionTitle from "../atoms/SectionTitle";
 
 // hooks import
 import useAOS from "@/hooks/useAOS";
+import Link from "next/link";
 
 const About = () => {
   useAOS();
@@ -55,6 +56,11 @@ const About = () => {
             <h3 className={styles.mainName}>Governing Body</h3>
             <p className={styles.name}>UFES 2024 実行委員会</p>
             <p className={styles.enName}>UFES 2024 Executive Committee</p>
+          </div>
+          <div className={styles.rightBox}>
+            <Link href={"/about"} className={styles.button}>
+              About
+            </Link>
           </div>
         </div>
       </div>
