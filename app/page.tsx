@@ -9,6 +9,7 @@ import styles from "../styles/page.module.scss";
 import Top from "@/components/organisms/Top";
 import About from "@/components/organisms/About";
 import BgImage from "@/components/organisms/BgImage";
+import Why from "@/components/organisms/Why";
 
 export default function Home() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -29,9 +30,8 @@ export default function Home() {
     <div className={styles.main}>
       <BgImage />
       <Top />
-      <div id="blurTarget">
-        <About />
-      </div>
+      <About />
+      <Why />
     </div>
   );
 }

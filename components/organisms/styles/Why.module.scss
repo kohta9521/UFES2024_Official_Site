@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@300..700&display=swap");
+
+.why {
+  position: absolute;
+  width: 100vw;
+  padding: 100px 0;
+  z-index: 2;
+  .container {
+    width: 45%;
+    max-width: 1200ox;
+    height: 100%;
+    margin: 0 auto;
+    .mainTextBox {
+      width: 100%;
+      margin-top: 50px;
+      .titleText {
+        text-align: center;
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .mainText {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 16px;
+        letter-spacing: 0.64px;
+        font-weight: 550;
+        line-height: 30px;
+        .accentColor {
+          color: var(--main-pink);
+          border-bottom: 1px solid var(--main-pink);
+        }
+      }
+      .enMainText {
+        text-align: center;
+        color: #383838;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 768px) {
+}
