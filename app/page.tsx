@@ -11,6 +11,8 @@ import About from "@/components/organisms/About";
 import BgImage from "@/components/organisms/BgImage";
 import Why from "@/components/organisms/Why";
 import Community from "@/components/organisms/Community";
+import Company from "@/components/organisms/Compnay";
+import Footer from "@/components/organisms/Footer";
 
 export default function Home() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -34,6 +36,8 @@ export default function Home() {
       <About />
       <Why />
       <Community />
+      <Company />
+      <Footer />
     </div>
   );
 }

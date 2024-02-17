@@ -10,12 +10,11 @@ import { FaTwitter, FaInstagram, FaFacebookF, FaGlobe } from "react-icons/fa";
 // components import
 
 // sns type
-type SnsLink = {
+export type SnsLink = {
   type: "Twitter" | "Instagram" | "Facebook" | "Website";
   url: string;
 };
 
-// props type
 export type CommunityCardProps = {
   id: number;
   img: string;

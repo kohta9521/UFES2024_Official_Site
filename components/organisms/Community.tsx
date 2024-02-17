@@ -6,14 +6,14 @@ import styles from "./styles/Community.module.scss";
 
 // components import
 import SectionTitle from "../atoms/SectionTitle";
-import CommunityCard from "../molecules/CommunityCard";
+// import CommunityCard from "../molecules/CommunityCard";
 
 // data import
-import communitiesData from "@/data/CommunityData.json";
+// import communitiesData from "@/data/CommunityData.json";
 
 const Community = () => {
-  const community = communitiesData[0];
-  const community1 = communitiesData[1];
+  // const community = communitiesData[0];
+  // const community1 = communitiesData[1];
   return (
     <div className={styles.community}>
       <div className={styles.container}>
@@ -27,8 +27,7 @@ const Community = () => {
         <div className={styles.mainTextBox}>
           <div className={styles.leftBox}>
             <div className={styles.flexBox} data-aos="fade-up">
-              <CommunityCard
-                key={community.id}
+              {/* <CommunityCard
                 id={community.id}
                 img={community.img}
                 genre={community.genre}
@@ -96,7 +95,7 @@ const Community = () => {
                 genre={community1.genre}
                 name={community1.name}
                 snsLinks={community1.snsLinks}
-              />
+              /> */}
             </div>
           </div>
           <div className={styles.rightBox} data-aos="fade-up">
