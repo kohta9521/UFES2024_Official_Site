@@ -10,6 +10,7 @@ import Top from "@/components/organisms/Top";
 import About from "@/components/organisms/About";
 import BgImage from "@/components/organisms/BgImage";
 import Why from "@/components/organisms/Why";
+import Community from "@/components/organisms/Community";
 
 export default function Home() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -32,6 +33,7 @@ export default function Home() {
       <Top />
       <About />
       <Why />
+      <Community />
     </div>
   );
 }

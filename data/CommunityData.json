@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "img": "/images/subHero.jpg",
+    "genre": "テクノロジー",
+    "name": "テックコミュニティ1",
+    "snsLinks": [
+      { "type": "Twitter", "url": "https://twitter.com/yourcommunity1" },
+      { "type": "Instagram", "url": "https://instagram.com/yourcommunity1" }
+    ]
+  },
+  {
+    "id": 2,
+    "img": "/images/subHero.jpg",
+    "genre": "アート",
+    "name": "アートコミュニティ2",
+    "snsLinks": [
+      { "type": "Facebook", "url": "https://facebook.com/yourcommunity2" },
+      { "type": "Website", "url": "https://yourcommunitywebsite2.com" }
+    ]
+  }
+]

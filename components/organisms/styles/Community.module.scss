@@ -1,0 +1,85 @@
+.community {
+  position: absolute;
+  width: 100vw;
+  padding: 100px 0;
+  z-index: 2;
+  .container {
+    width: 70%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+    .mainTextBox {
+      width: 100%;
+      margin-top: 50px;
+      display: flex;
+      border: 1px solid red;
+      .leftBox {
+        width: 70%;
+        border: 1px solid red;
+        .flexBox {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+      .rightBox {
+        width: 30%;
+        text-align: right;
+        border: 1px solid red;
+        .titleText {
+          font-size: 24px;
+          line-height: 40px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        .mainText {
+          display: block;
+          margin-bottom: 30px;
+          font-size: 16px;
+          letter-spacing: 0.64px;
+          font-weight: 550;
+          line-height: 30px;
+        }
+        .enMainText {
+          color: #383838;
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
+    }
+    .threeFlexBox {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    .bottomBox {
+      width: 100%;
+      height: 100px;
+      padding: 50px;
+      text-align: center;
+      .button {
+        width: 200px;
+        height: 50px;
+        padding: 20px 50px;
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--main-pink);
+        border: 1px solid var(--main-pink);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: "Share Tech Mono", monospace;
+        &:hover {
+          background-color: var(--main-white-color);
+          color: var(--main-pink);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 768px) {
+}

@@ -9,6 +9,11 @@ import SectionTitle from "../atoms/SectionTitle";
 // hooks import
 import useAOS from "@/hooks/useAOS";
 
+// react icons import
+import { FaEye } from "react-icons/fa";
+import { FaRegHandshake } from "react-icons/fa6";
+import { FaRegLightbulb } from "react-icons/fa";
+
 const Why = () => {
   useAOS();
   return (
@@ -25,17 +30,20 @@ const Why = () => {
           <p className={styles.titleText} data-aos="fade-up">
             なぜ合同イベントなのか
           </p>
-          <div className={styles.iconFlexBox}>
+          <div className={styles.iconFlexBox} data-aos="fade-up">
             <div className={styles.iconBox}>
               {/* icon */}
+              <FaEye className={styles.icon} />
               <p className={styles.iconTitle}>見る</p>
             </div>
             <div className={styles.iconBox}>
               {/* icon */}
+              <FaRegHandshake className={styles.icon} />
               <p className={styles.iconTitle}>体験する</p>
             </div>
             <div className={styles.iconBox}>
               {/* icon */}
+              <FaRegLightbulb className={styles.icon} />
               <p className={styles.iconTitle}>知る</p>
             </div>
           </div>
@@ -49,7 +57,9 @@ const Why = () => {
             ことではないでしょうか？
             <br />
             <br />
-            UFESはこの見て・体験して・知ることを提供できます。UFESをどうかあなたの貴重な大学生活にフル活用してください。
+            UFESはこの見て・体験して・知ることを提供できます。
+            <br />
+            UFESをどうかあなたの貴重な大学生活にフル活用してください。
           </p>
           <p className={styles.enMainText} data-aos="fade-up">
             New students are invited to the New Welcome Party to get to know the
