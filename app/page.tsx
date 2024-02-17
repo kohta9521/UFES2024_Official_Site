@@ -14,6 +14,7 @@ import Community from "@/components/organisms/Community";
 import Company from "@/components/organisms/Compnay";
 import Footer from "@/components/organisms/Footer";
 import Contact from "@/components/organisms/Contact";
+import Question from "@/components/organisms/Question";
 
 export default function Home() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -38,6 +39,7 @@ export default function Home() {
       <Why />
       <Community />
       <Company />
+      <Question />
       <Contact />
       <Footer />
     </div>
