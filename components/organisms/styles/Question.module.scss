@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@300..700&display=swap");
+
+.question {
+  width: 100vw;
+  padding: 100px 0;
+  // z-index: 2;
+  background-color: rgba(255, 255, 255, 0.5);
+  .container {
+    width: 45%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    .mainTextBox {
+      width: 100%;
+      margin-top: 50px;
+      .titleText {
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .mainText {
+        display: block;
+        margin-bottom: 30px;
+        font-size: 16px;
+        letter-spacing: 0.64px;
+        font-weight: 550;
+        line-height: 30px;
+      }
+      .enMainText {
+        color: #383838;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+  }
+}
