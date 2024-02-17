@@ -8,15 +8,12 @@
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
-    border: 1px solid red;
     .mainTextBox {
       width: 100%;
       margin-top: 50px;
       display: flex;
-      border: 1px solid red;
       .leftBox {
         width: 70%;
-        border: 1px solid red;
         .flexBox {
           width: 100%;
           display: flex;
@@ -26,7 +23,6 @@
       .rightBox {
         width: 30%;
         text-align: right;
-        border: 1px solid red;
         .titleText {
           font-size: 24px;
           line-height: 40px;
