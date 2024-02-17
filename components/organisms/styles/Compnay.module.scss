@@ -1,0 +1,11 @@
+.company {
+  width: 100vw;
+  padding: 100px 0;
+  z-index: 2;
+  .container {
+    width: 45%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "img": "/path/to/community-image1.jpg",
+    "genre": "テクノロジー",
+    "name": "テックコミュニティ1",
+    "snsLinks": [
+      { "type": "Twitter", "url": "https://twitter.com/yourcommunity1" },
+      { "type": "Instagram", "url": "https://instagram.com/yourcommunity1" }
+    ]
+  },
+  {
+    "id": 1,
+    "img": "/path/to/community-image1.jpg",
+    "genre": "テクノロジー",
+    "name": "テックコミュニティ1",
+    "snsLinks": [
+      { "type": "Twitter", "url": "https://twitter.com/yourcommunity1" },
+      { "type": "Instagram", "url": "https://instagram.com/yourcommunity1" }
+    ]
+  }
+]
