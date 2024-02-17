@@ -7,7 +7,7 @@
   height: 100vh;
   background-image: url("/images/pc_back.png");
   background-size: cover;
-  z-index: 0;
+  z-index: -1;
 }
 
 @media screen and (max-width: 1280px) {

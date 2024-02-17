@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@300..700&display=swap");
 
 .about {
-  // position: absolute;
   width: 100vw;
   padding: 100px 0;
-  z-index: 2;
+  // z-index: 2;
+  background-color: rgba(255, 255, 255, 0.5);
 
   .container {
     width: 45%;

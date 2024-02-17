@@ -13,6 +13,7 @@ import Why from "@/components/organisms/Why";
 import Community from "@/components/organisms/Community";
 import Company from "@/components/organisms/Compnay";
 import Footer from "@/components/organisms/Footer";
+import Contact from "@/components/organisms/Contact";
 
 export default function Home() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -37,6 +38,7 @@ export default function Home() {
       <Why />
       <Community />
       <Company />
+      <Contact />
       <Footer />
     </div>
   );
