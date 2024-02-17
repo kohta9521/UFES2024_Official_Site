@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // scss import
 import styles from "./styles/About.module.scss";
 
@@ -6,7 +8,6 @@ import SectionTitle from "../atoms/SectionTitle";
 
 // hooks import
 import useAOS from "@/hooks/useAOS";
-import Link from "next/link";
 
 const About = () => {
   useAOS();
