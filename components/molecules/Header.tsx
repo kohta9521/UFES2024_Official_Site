@@ -2,9 +2,9 @@ import React from "react";
 
 // scss import
 import styles from "./styles/Header.module.scss";
-import Logo from "../atoms/Logo";
 
 // components import
+import Logo from "../atoms/Logo";
 
 const Header = () => {
   return (
