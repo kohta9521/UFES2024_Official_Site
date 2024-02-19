@@ -20,8 +20,8 @@ const SubMainContentLayout = ({
   return (
     <div className={styles.mainContent}>
       <div className={styles.hero}>
-        <h1>{title}</h1>
-        <p>{desc}</p>
+        <h1 className={styles.title}>{title}</h1>
+        <p className={styles.desc}>{desc}</p>
       </div>
       <div className={styles.content}>{children}</div>
     </div>
