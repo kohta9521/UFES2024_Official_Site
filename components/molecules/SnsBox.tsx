@@ -19,8 +19,8 @@ const SnsBox = () => {
         <FiInstagram className={styles.snsIcon} />
       </Link>
       <FaSquareXTwitter className={styles.snsIcon} />
-      <FaYoutube className={styles.snsIcon} />
-      <FaTiktok className={styles.snsIcon} />
+      {/* <FaYoutube className={styles.snsIcon} />
+      <FaTiktok className={styles.snsIcon} /> */}
     </div>
   );
 };
