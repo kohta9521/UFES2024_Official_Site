@@ -2,10 +2,10 @@ import React from "react";
 
 // scss import
 import styles from "./styles/SubPageLayout.module.scss";
-import Header from "../molecules/Header";
-import Footer from "../organisms/Footer";
 
 // components import
+import Header from "../molecules/Header";
+import Footer from "../organisms/Footer";
 
 // type props
 export type SubPageLayoutProps = {

@@ -1,0 +1,33 @@
+.titleBox {
+  display: block;
+  max-width: 200px;
+  height: 50px;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: var(--main-pink);
+  margin-bottom: 20px;
+  .titleText {
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1280ox) {
+  .titleBox {
+    display: block;
+    max-width: 150px;
+    height: 40px;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: var(--main-pink);
+    margin-bottom: 20px;
+    .titleText {
+      font-size: 14px;
+      line-height: 20px;
+      color: white;
+    }
+  }
+}
