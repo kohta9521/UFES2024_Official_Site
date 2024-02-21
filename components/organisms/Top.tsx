@@ -15,6 +15,7 @@ import ScrollDownText from "../atoms/ScrollDownText";
 import TopListBox from "../molecules/TopListBox";
 import SnsBox from "../molecules/SnsBox";
 import HamburgerBtn from "../atoms/HamburgerBtn";
+import EntryButton from "../atoms/EntryButton";
 
 const Top = () => {
   useAOS();
@@ -44,6 +45,7 @@ const Top = () => {
       <TopListBox />
       <SnsBox />
       <ScrollDownText />
+      <EntryButton />
     </div>
   );
 };

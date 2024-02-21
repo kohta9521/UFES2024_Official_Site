@@ -17,7 +17,7 @@ const Footer = () => {
             プラザ 5F
           </p>
           <p className={styles.mail}>
-            E-mail : ufes.freshemenwelcomefes@gmail.com
+            E-mail : ufes.freshmenwelcomefes@gmail.com
           </p>
           <p className={styles.en}>© 2024 UFES</p>
           {/* en */}
