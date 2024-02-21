@@ -1,0 +1,65 @@
+.mainContent {
+  width: 100%;
+  .hero {
+    width: 95%;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 100px;
+    .title {
+      font-size: 140px;
+    }
+    .desc {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  .content {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .mainContent {
+    width: 100%;
+    .hero {
+      width: 95%;
+      height: 400px;
+      margin: 0 auto;
+      padding-top: 100px;
+      .title {
+        font-size: 90px;
+      }
+      .desc {
+        font-size: 10px;
+        font-weight: bold;
+      }
+    }
+    .content {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainContent {
+    width: 100%;
+    .hero {
+      width: 95%;
+      height: 280px;
+      margin: 0 auto;
+      padding-top: 70px;
+      .title {
+        font-size: 80px;
+      }
+      .desc {
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+    .content {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+}

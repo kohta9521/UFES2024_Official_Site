@@ -39,7 +39,7 @@ const Faq = () => {
           </h3>
           {questions.map(({ id, question, answer }) => (
             <div
-              data-aos="fade-up"
+              // data-aos="fade-up"
               key={id}
               className={`${styles.questionItem} ${openQuestionId === id ? styles.open : ""}`}
               onClick={() => toggleQuestion(id)}
