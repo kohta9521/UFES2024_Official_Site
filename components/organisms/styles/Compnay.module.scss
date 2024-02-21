@@ -23,14 +23,21 @@
       }
       .mainText {
         display: block;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         font-size: 16px;
         letter-spacing: 0.64px;
         font-weight: 550;
         line-height: 30px;
       }
+      .enMainText {
+        color: #383838;
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 40px;
+      }
       .planTitle {
         font-family: "Share Tech Mono", monospace;
+        font-size: 24px;
       }
       .comoantFlexBox {
       }
@@ -62,9 +69,73 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .company {
+    // position: absolute;
+    width: 100vw;
+    padding: 100px 0;
+    // z-index: 2;
+    background-color: rgba(255, 255, 255, 0.5);
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      .mainContent {
+        width: 100%;
+        margin-top: 50px;
+        .titleText {
+          font-family: "Share Tech Mono", monospace;
+          font-size: 24px;
+          line-height: 40px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        .mainText {
+          display: block;
+          margin-bottom: 10px;
+          font-size: 16px;
+          letter-spacing: 0.64px;
+          font-weight: 550;
+          line-height: 30px;
+        }
+        .enMainText {
+          color: #383838;
+          font-size: 14px;
+          line-height: 25px;
+          margin-bottom: 40px;
+        }
+        .planTitle {
+          font-family: "Share Tech Mono", monospace;
+          font-size: 24px;
+        }
+        .comoantFlexBox {
+        }
+      }
+      .bottomBox {
+        width: 100%;
+        height: 100px;
+        padding: 50px;
+        text-align: center;
+        .button {
+          width: 200px;
+          height: 50px;
+          padding: 20px 50px;
+          text-decoration: none;
+          font-size: 22px;
+          font-weight: 700;
+          color: var(--main-pink);
+          border: 1px solid var(--main-pink);
+          cursor: pointer;
+          transition: all 0.3s ease;
+          font-family: "Share Tech Mono", monospace;
+          &:hover {
+            background-color: var(--main-white-color);
+            color: var(--main-pink);
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 768px) {
-  .company {
-    display: none;
-  }
 }
