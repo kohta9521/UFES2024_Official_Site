@@ -35,6 +35,29 @@
       .comoantFlexBox {
       }
     }
+    .bottomBox {
+      width: 100%;
+      height: 100px;
+      padding: 50px;
+      text-align: center;
+      .button {
+        width: 200px;
+        height: 50px;
+        padding: 20px 50px;
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--main-pink);
+        border: 1px solid var(--main-pink);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: "Share Tech Mono", monospace;
+        &:hover {
+          background-color: var(--main-white-color);
+          color: var(--main-pink);
+        }
+      }
+    }
   }
 }
 

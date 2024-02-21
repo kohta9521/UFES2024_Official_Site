@@ -8,6 +8,7 @@ import SectionTitle from "../atoms/SectionTitle";
 
 // hooks import
 import useAOS from "@/hooks/useAOS";
+import Link from "next/link";
 
 const Company = () => {
   useAOS();
@@ -40,6 +41,11 @@ const Company = () => {
             Boronz Sponser
           </h2>
           <div className={styles.companyFlexBox} data-aos="fade-up"></div>
+        </div>
+        <div className={styles.bottomBox} data-aos="fade-up">
+          <Link href={"/about"} className={styles.button}>
+            View More
+          </Link>
         </div>
       </div>
     </div>
