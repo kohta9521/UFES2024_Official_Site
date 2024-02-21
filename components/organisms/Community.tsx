@@ -6,14 +6,16 @@ import styles from "./styles/Community.module.scss";
 
 // components import
 import SectionTitle from "../atoms/SectionTitle";
-// import CommunityCard from "../molecules/CommunityCard";
+import CommunityCard from "../molecules/CommunityCard";
 
 // data import
-// import communitiesData from "@/data/CommunityData.json";
+import communitiesData from "@/data/CommunityData.json";
 
 const Community = () => {
-  // const community = communitiesData[0];
-  // const community1 = communitiesData[1];
+  const community = communitiesData[0];
+  const community1 = communitiesData[1];
+  const community2 = communitiesData[2];
+  const community3 = communitiesData[3];
   return (
     <div className={styles.community}>
       <div className={styles.container}>
@@ -27,7 +29,7 @@ const Community = () => {
         <div className={styles.mainTextBox}>
           <div className={styles.leftBox}>
             <div className={styles.flexBox} data-aos="fade-up">
-              {/* <CommunityCard
+              <CommunityCard
                 id={community.id}
                 img={community.img}
                 genre={community.genre}
@@ -45,57 +47,20 @@ const Community = () => {
             </div>
             <div className={styles.flexBox} data-aos="fade-up">
               <CommunityCard
-                key={community.id}
-                id={community.id}
-                img={community.img}
-                genre={community.genre}
-                name={community.name}
-                snsLinks={community.snsLinks}
+                id={community2.id}
+                img={community2.img}
+                genre={community2.genre}
+                name={community2.name}
+                snsLinks={community2.snsLinks}
               />
               <CommunityCard
-                key={community1.id}
-                id={community1.id}
-                img={community1.img}
-                genre={community1.genre}
-                name={community1.name}
-                snsLinks={community1.snsLinks}
+                key={community3.id}
+                id={community3.id}
+                img={community3.img}
+                genre={community3.genre}
+                name={community3.name}
+                snsLinks={community3.snsLinks}
               />
-            </div>
-            <div className={styles.flexBox} data-aos="fade-up">
-              <CommunityCard
-                key={community.id}
-                id={community.id}
-                img={community.img}
-                genre={community.genre}
-                name={community.name}
-                snsLinks={community.snsLinks}
-              />
-              <CommunityCard
-                key={community1.id}
-                id={community1.id}
-                img={community1.img}
-                genre={community1.genre}
-                name={community1.name}
-                snsLinks={community1.snsLinks}
-              />
-            </div>
-            <div className={styles.flexBox} data-aos="fade-up">
-              <CommunityCard
-                key={community.id}
-                id={community.id}
-                img={community.img}
-                genre={community.genre}
-                name={community.name}
-                snsLinks={community.snsLinks}
-              />
-              <CommunityCard
-                key={community1.id}
-                id={community1.id}
-                img={community1.img}
-                genre={community1.genre}
-                name={community1.name}
-                snsLinks={community1.snsLinks}
-              /> */}
             </div>
           </div>
           <div className={styles.rightBox} data-aos="fade-up">

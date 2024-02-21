@@ -1,22 +1,48 @@
 [
   {
     "id": 1,
-    "img": "/path/to/community-image1.jpg",
-    "genre": "テクノロジー",
-    "name": "テックコミュニティ1",
+    "img": "/images/logo/community/afa.jpg",
+    "genre": "fashion",
+    "name": "AFA",
+    "snsLinks": [
+      { "type": "Twitter", "url": "https://twitter.com/aoyama_afa" },
+      {
+        "type": "Instagram",
+        "url": "https://www.instagram.com/aoyama_afa/?hl=ja"
+      },
+      { "type": "Website", "url": "https://afacrew.com/" }
+    ]
+  },
+  {
+    "id": 2,
+    "img": "/images/logo/community/hokuleaLogo.jpg",
+    "genre": "outdoor",
+    "name": "HOKULEA",
     "snsLinks": [
       { "type": "Twitter", "url": "https://twitter.com/yourcommunity1" },
       { "type": "Instagram", "url": "https://instagram.com/yourcommunity1" }
     ]
   },
   {
-    "id": 1,
-    "img": "/path/to/community-image1.jpg",
-    "genre": "テクノロジー",
-    "name": "テックコミュニティ1",
+    "id": 3,
+    "img": "/images/logo/community/nca.jpg",
+    "genre": "sports",
+    "name": "NCA",
     "snsLinks": [
-      { "type": "Twitter", "url": "https://twitter.com/yourcommunity1" },
-      { "type": "Instagram", "url": "https://instagram.com/yourcommunity1" }
+      {
+        "type": "Instagram",
+        "url": "https://www.instagram.com/ncatokyo/?hl=ja"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "img": "/images/logo/community/spechtech.jpg",
+    "genre": "technology",
+    "name": "SpechTech",
+    "snsLinks": [
+      { "type": "Twitter", "url": "https://twitter.com/spectech_ai" },
+      { "type": "Instagram", "url": "https://www.instagram.com/spectech_ai/" }
     ]
   }
 ]
