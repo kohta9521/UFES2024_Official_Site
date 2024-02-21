@@ -6,16 +6,15 @@ import styles from "./styles/Community.module.scss";
 
 // components import
 import SectionTitle from "../atoms/SectionTitle";
-import CommunityCard from "../molecules/CommunityCard";
-
+import CommunityCard, { CommunityCardProps } from "../molecules/CommunityCard";
 // data import
 import communitiesData from "@/data/CommunityData.json";
 
 const Community = () => {
-  const community = communitiesData[0];
-  const community1 = communitiesData[1];
-  const community2 = communitiesData[2];
-  const community3 = communitiesData[3];
+  const community = communitiesData[0] as CommunityCardProps;
+  const community1 = communitiesData[1] as CommunityCardProps;
+  const community2 = communitiesData[2] as CommunityCardProps;
+  const community3 = communitiesData[3] as CommunityCardProps;
   return (
     <div className={styles.community}>
       <div className={styles.container}>
