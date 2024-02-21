@@ -67,6 +67,8 @@ const Community = () => {
             <p className={styles.mainText}>
               参加団体の一覧です。ジャンルなどはあえて制限をしていません。さまざまな団体が参加をすることでさらにUFESは楽しいものになると考えています。
               ここでは参加団体のジャンル・公式SNSを紹介しています。
+              <br />
+              また、現時点での主要参加団体を紹介していますが、随時更新をしていきます。
             </p>
             <p className={styles.enMainText}>
               This is a list of participating organizations. We dare not limit

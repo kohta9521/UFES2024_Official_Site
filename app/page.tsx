@@ -11,7 +11,7 @@ import About from "@/components/organisms/About";
 import BgImage from "@/components/organisms/BgImage";
 import Why from "@/components/organisms/Why";
 import Community from "@/components/organisms/Community";
-import Company from "@/components/organisms/Compnay";
+// import Company from "@/components/organisms/Compnay";
 import Footer from "@/components/organisms/Footer";
 import Contact from "@/components/organisms/Contact";
 import Question from "@/components/organisms/Question";
@@ -38,7 +38,7 @@ export default function Home() {
       <About />
       <Why />
       <Community />
-      <Company />
+      {/* <Company /> */}
       <Question />
       <Contact />
       <Footer />
