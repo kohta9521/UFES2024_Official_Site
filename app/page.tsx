@@ -38,7 +38,7 @@ export default function Home() {
       <About />
       <Why />
       <Community />
-      <Company />
+      {/* <Company /> */}
       <Question />
       <Contact />
       <Footer />
