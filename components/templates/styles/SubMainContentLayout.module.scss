@@ -1,12 +1,14 @@
 .mainContent {
   width: 100%;
+
   .hero {
-    width: 95%;
-    height: 400px;
+    width: 60%;
+    height: 380px;
     margin: 0 auto;
     padding-top: 100px;
     .title {
       font-size: 140px;
+      color: var(--main-pink);
     }
     .desc {
       font-size: 20px;
@@ -28,7 +30,7 @@
       margin: 0 auto;
       padding-top: 100px;
       .title {
-        font-size: 90px;
+        font-size: 50px;
       }
       .desc {
         font-size: 10px;
@@ -50,10 +52,10 @@
       margin: 0 auto;
       padding-top: 70px;
       .title {
-        font-size: 80px;
+        font-size: 50px;
       }
       .desc {
-        font-size: 12px;
+        font-size: 10px;
         font-weight: bold;
       }
     }

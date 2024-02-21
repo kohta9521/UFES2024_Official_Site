@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 // scss import
 import styles from "./styles/Compnay.module.scss";
@@ -8,7 +9,6 @@ import SectionTitle from "../atoms/SectionTitle";
 
 // hooks import
 import useAOS from "@/hooks/useAOS";
-import Link from "next/link";
 
 const Company = () => {
   useAOS();
@@ -29,7 +29,7 @@ const Company = () => {
           <p className={styles.mainText} data-aos="fade-up">
             UFESをご支援いただいている協賛企業・団体の皆様に、心より感謝申し上げます。
           </p>
-          <p className={styles.enMainText}>
+          <p className={styles.enMainText} data-aos="fade-up">
             We would like to thank all the sponsors and organizations that
             support UFES.
           </p>
@@ -53,7 +53,7 @@ const Company = () => {
           </div>
         </div>
         <div className={styles.bottomBox} data-aos="fade-up">
-          <Link href={"/about"} className={styles.button}>
+          <Link href={"/company"} className={styles.button}>
             View More
           </Link>
         </div>

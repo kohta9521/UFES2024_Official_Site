@@ -78,7 +78,7 @@ const Community = () => {
           </div>
         </div>
         <div className={styles.bottomBox} data-aos="fade-up">
-          <Link href={"/about"} className={styles.button}>
+          <Link href={"/community"} className={styles.button}>
             View More
           </Link>
         </div>

@@ -1,0 +1,15 @@
+.textBox {
+  width: 100%;
+  .text {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .textBox {
+    .text {
+      font-size: 12px;
+    }
+  }
+}
