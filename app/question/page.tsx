@@ -18,6 +18,9 @@ const Question = () => {
         <SubMainContentLayout title="Question" desc="よくある質問">
           <SubpageSectionTitle id="question" title="よくある質問" />
           <SubpageMainText text="このイベントを開催するにあたって想定される質問をまとめました。一般の参加者向け・団体・インカレ向けと分かれているためご自身の関連する部分を参照ください。なおここに載っていない質問についてはお問い合わせフォームより質問をよろしくお願いします。" />
+          <div className={styles.mainContent}>
+            
+          </div>
         </SubMainContentLayout>
       </SubPageLayout>
     </div>
