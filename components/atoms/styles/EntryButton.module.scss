@@ -1,40 +1,51 @@
-.entryButton {
+.underBox {
   position: absolute;
   position: fixed;
-  bottom: 10px;
-  right: 20px;
-  width: 220px;
-  height: 70px;
-  border-radius: 40px;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #ff6dc09b;
   text-align: center;
-  text-decoration: none;
-  overflow: hidden;
-  background-color: var(--main-pink);
-  cursor: pointer;
-  z-index: 10;
-  &:before {
-    content: "";
+  z-index: 12;
+  .entryButton {
     position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(
-      130deg,
-      rgba(255, 255, 255, 0) 25%,
-      rgba(255, 255, 255, 0.5) 50%,
-      rgba(255, 255, 255, 0) 75%
-    );
-    animation: shine 2s infinite;
-  }
-  &:hover {
-    background-color: var(--sub-pink);
-  }
-  .buttonText {
-    font-size: 16px;
-    line-height: 70px;
-    color: white;
+    right: 0;
+    left: 0;
+    bottom: 5px;
+    width: 220px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 40px;
+    text-align: center;
     text-decoration: none;
+    overflow: hidden;
+    background-color: var(--main-pink);
+    cursor: pointer;
+    z-index: 10;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        130deg,
+        rgba(255, 255, 255, 0) 25%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 75%
+      );
+      animation: shine 2s infinite;
+    }
+    &:hover {
+      background-color: var(--sub-pink);
+    }
+    .buttonText {
+      font-size: 16px;
+      line-height: 70px;
+      color: white;
+      text-decoration: none;
+    }
   }
 }
 
@@ -46,24 +57,25 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .entryButton {
-    position: absolute;
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    width: 200px;
-    height: 70px;
-    border-radius: 40px;
-    text-align: center;
-    text-decoration: none;
-    background-color: var(--main-pink);
-    &:hover {
-    }
-    .buttonText {
-      font-size: 14px;
-      line-height: 70px;
-      color: white;
+  .underBox {
+    .entryButton {
+      position: absolute;
+      position: fixed;
+      bottom: 5px;
+      width: 200px;
+      height: 70px;
+      border-radius: 40px;
+      text-align: center;
       text-decoration: none;
+      background-color: var(--main-pink);
+      &:hover {
+      }
+      .buttonText {
+        font-size: 14px;
+        line-height: 70px;
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }

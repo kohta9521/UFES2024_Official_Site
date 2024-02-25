@@ -6,9 +6,11 @@ import styles from "./styles/EntryButton.module.scss";
 
 const EntryButton = () => {
   return (
-    <Link href={"/entryform"} className={styles.entryButton}>
-      <p className={styles.buttonText}>参加フォームを記入する</p>
-    </Link>
+    <div className={styles.underBox}>
+      <Link href={"/entryform"} className={styles.entryButton}>
+        <p className={styles.buttonText}>参加フォームを記入する</p>
+      </Link>
+    </div>
   );
 };
 

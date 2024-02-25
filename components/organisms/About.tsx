@@ -33,6 +33,19 @@ const About = () => {
             大学生活は有限です。所属するコミュニティによって学生生活はガラリと異なることでしょう。新入生には様々な学生団体を同じ場で比較することで、より自分とマッチする学生団体と出会い有意義な学生生活を送れる場を提供いたします。
             学生同士が新たな学生を想い生まれたイベントです。だからこそ主催側は思い入れと熱意があり、また参加者はカジュアルに楽しんでもらえるでしょう。企業考案の学生を入れたイベントとは全く異なること間違いなしです。
           </p>
+          <p className={styles.titleText} data-aos="fade-up">
+            Vision
+          </p>
+          <p className={styles.mainText} data-aos="fade-up">
+            大学に属していない学生団体は各々がイベントを行っていました。様々なカラーの学生団体が集い、ともに一つのイベントを作り上げることで学生団体同士の新たな化学反応と横のつながりを目指します。
+          </p>
+          <p className={styles.titleText} data-aos="fade-up">
+            新入生へ
+          </p>
+          <p className={styles.mainText} data-aos="fade-up">
+            大学生活は有限です。所属するコミュニティによって学生生活はガラリと異なることでしょう。新入生には様々な学生団体を同じ場で比較することで、より自分とマッチする学生団体と出会い有意義な学生生活を送れる場を提供いたします。
+            学生同士が新たな学生を想い生まれたイベントです。だからこそ主催側は思い入れと熱意があり、また参加者はカジュアルに楽しんでもらえるでしょう。企業考案の学生を入れたイベントとは全く異なること間違いなしです。
+          </p>
           <p className={styles.enMainText} data-aos="fade-up">
             UFES is a joint welcome event for student groups that was set up to
             make the Spring University Student Fest a part of the culture.
