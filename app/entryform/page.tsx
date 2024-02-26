@@ -59,38 +59,82 @@ const Entry = () => {
               <input type="text" id="nameKana" name="nameKana" />
             </div>
             <div className={styles.field}>
-              <p>大学何年生か</p>
-              {["新大学一年生", "2年生", "3年生", "4年生", "その他"].map(
-                (year, index) => (
-                  <label key={index}>
-                    <input type="checkbox" name="universityYear" value={year} />
-                    {year}
-                  </label>
-                )
-              )}
-            </div>
-            <div className={styles.field}>
-              <label htmlFor="universityName">大学名</label>
+              <label htmlFor="universityName">大学名・専門学校名</label>
               <input type="text" id="universityName" name="universityName" />
             </div>
             <div className={styles.field}>
-              <label htmlFor="discoveryMethod">
-                どうやってこのイベントを知ったか
-              </label>
-              <input type="text" id="discoveryMethod" name="discoveryMethod" />
-            </div>
-            <div className={styles.field}>
-              <p>イベントを知った団体名</p>
-              {["団体1", "団体2"].map((organization, index) => (
+              <p>学年</p>
+              {["新大学1年生", "2年生", "その他"].map((year, index) => (
                 <label key={index}>
-                  <input
-                    type="checkbox"
-                    name="referringOrganization"
-                    value={organization}
-                  />
-                  {organization}
+                  <input type="radio" name="universityYear" value={year} />
+                  {year}
                 </label>
               ))}
+            </div>
+            <div className={styles.field}>
+              <label htmlFor="discoveryMethod">
+                どこの団体からこのイベントの紹介をされましたか。
+              </label>
+              <select name="" id="discoveryMethod">
+                {["AFA", "HOKULEA", "NCA", "SpechTech"].map((group, index) => {
+                  return (
+                    <option key={index} value={group}>
+                      {group}
+                    </option>
+                  );
+                })}
+              </select>
+            </div>
+            <div className={styles.field}>
+              <p>
+                上記でその他と回答した方に質問です。UFESのことを、どのようにしてお知りになりましたか。(※その他以外の回答の方は未入力で大丈夫です。)
+              </p>
+              <select name="" id="">
+                {["ウェブサイト", "友人", "チラシ", "広告"].map(
+                  (organization, index) => (
+                    <option key={index} value={organization}>
+                      {organization}
+                    </option>
+                  )
+                )}
+              </select>
+            </div>
+            <div className={styles.field}>
+              <label>
+                現在参加を検討しているインカレ・学生団体はありますか？
+              </label>
+              {["はい", "いいえ"].map((value, index) => {
+                return (
+                  <React.Fragment key={index}>
+                    <input type="radio" value={value} /> {value}
+                  </React.Fragment>
+                );
+              })}
+            </div>
+            <div className={styles.field}>
+              <label>
+                はいと答えた方に質問です。団体名を教えていただくことは可能でしょうか。可能な場合記入をお願いします。（当日実際にお呼びすることが可能かもしれません。）
+              </label>
+              <input type="text" />
+            </div>
+            <div className={styles.field}>
+              <label>
+                今ハマっている・当日来てくれたら嬉しいインフルエンサーの方などはいますか。
+              </label>
+              {["はい", "いいえ"].map((value, index) => {
+                return (
+                  <React.Fragment key={index}>
+                    <input type="radio" value={value} />
+                    {value}
+                  </React.Fragment>
+                );
+              })}
+            </div>
+            <div className={styles.field}>
+              <label>
+                はいとか答えた方に質問です。そのインフルエンサーの方のお名前・アカウント名を教えていただくことは可能でしょうか。可能な場合は記入をお願いします。
+              </label>
+              <input type="text" />
             </div>
             <div className={styles.submitButtonContainer}>
               <button type="submit" className={styles.submitButton}>
