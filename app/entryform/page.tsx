@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 // scss import
@@ -7,7 +8,42 @@ import styles from "./Entry.module.scss";
 import SubPageLayout from "@/components/templates/SubPageLayout";
 import BgImage from "@/components/organisms/BgImage";
 
+// React Form Hook
+
+import { useForm, SubmitHandler } from "react-hook-form";
+// zod
+import { zodResolver } from "@hookform/resolvers/zod";
+import contactSchema, {
+  FormURL,
+  Contact,
+  FormFieldNames,
+} from "@/scheme/contactScheme";
+
 const Entry = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Contact>({
+    resolver: zodResolver(contactSchema),
+  });
+
+  // 送信ボタンの処理
+  const onSubmit: SubmitHandler<Contact> = async (data) => {
+    try {
+      await fetch(FormURL, {
+        method: "POST",
+        body: provideUrlEncodedFormData(data, FormFieldNames),
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      });
+    } catch (e) {
+      alert("送信に失敗しました。ネットワーク状況を確認してください");
+    }
+  };
+
   return (
     <div className={styles.entryform}>
       <BgImage />
@@ -48,49 +84,65 @@ const Entry = () => {
           </p>
         </div>
         <div className={styles.entry}>
-          <form className={styles.form}>
+          {/* ここからForm */}
+          <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
             <h1 className={styles.formTitle}>事前参加フォーム 入力欄</h1>
+
             <div className={styles.field}>
-              <label htmlFor="nameKanji">氏名（漢字）</label>
-              <input type="text" id="nameKanji" name="nameKanji" />
+              <label>氏名（漢字）</label>
+              <input type="text" {...register("name")} />
+              <p className={styles.error__message}>{errors.name?.message}</p>
             </div>
+
             <div className={styles.field}>
-              <label htmlFor="nameKana">氏名（カタカナ）</label>
-              <input type="text" id="nameKana" name="nameKana" />
+              <label>氏名（カタカナ）</label>
+              <input type="text" {...register("furigana")} />
+              <p className={styles.error__message}>
+                {errors.furigana?.message}
+              </p>
             </div>
+
             <div className={styles.field}>
-              <label htmlFor="universityName">大学名・専門学校名</label>
-              <input type="text" id="universityName" name="universityName" />
+              <label>大学名・専門学校名</label>
+              <input type="text" {...register("school")} />
+              <p className={styles.error__message}>{errors.school?.message}</p>
             </div>
+
             <div className={styles.field}>
-              <p>学年</p>
+              <label>学年</label>
               {["新大学1年生", "2年生", "その他"].map((year, index) => (
                 <label key={index}>
-                  <input type="radio" name="universityYear" value={year} />
+                  <input type="radio" {...register("grade")} value={year} />
                   {year}
                 </label>
               ))}
+              <p className={styles.error__message}>{errors.grade?.message}</p>
             </div>
+
             <div className={styles.field}>
-              <label htmlFor="discoveryMethod">
-                どこの団体からこのイベントの紹介をされましたか。
-              </label>
-              <select name="" id="discoveryMethod">
-                {["AFA", "HOKULEA", "NCA", "SpechTech"].map((group, index) => {
-                  return (
-                    <option key={index} value={group}>
-                      {group}
-                    </option>
-                  );
-                })}
+              <label>どこの団体からこのイベントの紹介をされましたか。</label>
+              <select {...register("introduction")}>
+                {["AFA", "HOKULEA", "NCA", "SpechTech", "その他"].map(
+                  (group, index) => {
+                    return (
+                      <option key={index} value={group}>
+                        {group}
+                      </option>
+                    );
+                  }
+                )}
               </select>
-            </div>
-            <div className={styles.field}>
-              <p>
-                上記でその他と回答した方に質問です。UFESのことを、どのようにしてお知りになりましたか。(※その他以外の回答の方は未入力で大丈夫です。)
+              <p className={styles.error__message}>
+                {errors.introduction?.message}
               </p>
-              <select name="" id="">
-                {["ウェブサイト", "友人", "チラシ", "広告"].map(
+            </div>
+
+            <div className={styles.field}>
+              <label>
+                上記でその他と回答した方に質問です。UFESのことを、どのようにしてお知りになりましたか。(※その他以外の回答の方は未入力で大丈夫です。)
+              </label>
+              <select {...register("how_to_known")}>
+                {["ウェブサイト", "友人", "チラシ", "広告", "その他"].map(
                   (organization, index) => (
                     <option key={index} value={organization}>
                       {organization}
@@ -98,44 +150,73 @@ const Entry = () => {
                   )
                 )}
               </select>
+              <p className={styles.error__message}>
+                {errors.how_to_known?.message}
+              </p>
             </div>
+
             <div className={styles.field}>
               <label>
                 現在参加を検討しているインカレ・学生団体はありますか？
               </label>
               {["はい", "いいえ"].map((value, index) => {
                 return (
-                  <React.Fragment key={index}>
-                    <input type="radio" value={value} /> {value}
-                  </React.Fragment>
+                  <label key={index}>
+                    <input
+                      type="radio"
+                      value={value}
+                      {...register("is_join_group")}
+                    />{" "}
+                    {value}
+                  </label>
                 );
               })}
+              <p className={styles.error__message}>
+                {errors.is_join_group?.message}
+              </p>
             </div>
+
             <div className={styles.field}>
               <label>
                 はいと答えた方に質問です。団体名を教えていただくことは可能でしょうか。可能な場合記入をお願いします。（当日実際にお呼びすることが可能かもしれません。）
               </label>
-              <input type="text" />
+              <input type="text" {...register("group_name")} />
+              <p className={styles.error__message}>
+                {errors.group_name?.message}
+              </p>
             </div>
+
             <div className={styles.field}>
               <label>
                 今ハマっている・当日来てくれたら嬉しいインフルエンサーの方などはいますか。
               </label>
               {["はい", "いいえ"].map((value, index) => {
                 return (
-                  <React.Fragment key={index}>
-                    <input type="radio" value={value} />
+                  <label key={index}>
+                    <input
+                      type="radio"
+                      value={value}
+                      {...register("influencer")}
+                    />
                     {value}
-                  </React.Fragment>
+                  </label>
                 );
               })}
+              <p className={styles.error__message}>
+                {errors.influencer?.message}
+              </p>
             </div>
+
             <div className={styles.field}>
               <label>
-                はいとか答えた方に質問です。そのインフルエンサーの方のお名前・アカウント名を教えていただくことは可能でしょうか。可能な場合は記入をお願いします。
+                はいと答えた方に質問です。そのインフルエンサーの方のお名前・アカウント名を教えていただくことは可能でしょうか。可能な場合は記入をお願いします。
               </label>
-              <input type="text" />
+              <input type="text" {...register("who_is_influencer")} />
+              <p className={styles.error__message}>
+                {errors.who_is_influencer?.message}
+              </p>
             </div>
+
             <div className={styles.submitButtonContainer}>
               <button type="submit" className={styles.submitButton}>
                 送信
@@ -148,5 +229,22 @@ const Entry = () => {
     </div>
   );
 };
+
+type FormTypes = {
+  [key: string]: string;
+};
+
+function provideUrlEncodedFormData(
+  originalFormData: FormTypes,
+  formFieldNames: FormTypes
+) {
+  const result: FormTypes = {};
+
+  for (const key of Object.keys(originalFormData)) {
+    result[formFieldNames[key]] = originalFormData[key];
+  }
+
+  return new URLSearchParams(result).toString();
+}
 
 export default Entry;
