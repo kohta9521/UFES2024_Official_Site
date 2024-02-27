@@ -18,8 +18,10 @@ import contactSchema, {
   Contact,
   FormFieldNames,
 } from "@/scheme/contactScheme";
+import { useRouter } from "next/navigation";
 
 const Entry = () => {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -39,6 +41,7 @@ const Entry = () => {
           "Content-Type": "application/x-www-form-urlencoded",
         },
       });
+      router.push("/entryform/entrycomplete");
     } catch (e) {
       alert("送信に失敗しました。ネットワーク状況を確認してください");
     }
@@ -103,6 +106,12 @@ const Entry = () => {
             </div>
 
             <div className={styles.field}>
+              <label>メールアドレス</label>
+              <input type="text" {...register("email")} />
+              <p className={styles.error__message}>{errors.email?.message}</p>
+            </div>
+
+            <div className={styles.field}>
               <label>大学名・専門学校名</label>
               <input type="text" {...register("school")} />
               <p className={styles.error__message}>{errors.school?.message}</p>
@@ -122,15 +131,20 @@ const Entry = () => {
             <div className={styles.field}>
               <label>どこの団体からこのイベントの紹介をされましたか。</label>
               <select {...register("introduction")}>
-                {["AFA", "HOKULEA", "NCA", "SpechTech", "その他"].map(
-                  (group, index) => {
-                    return (
-                      <option key={index} value={group}>
-                        {group}
-                      </option>
-                    );
-                  }
-                )}
+                {[
+                  "選択してください",
+                  "AFA",
+                  "HOKULEA",
+                  "NCA",
+                  "SpechTech",
+                  "その他",
+                ].map((group, index) => {
+                  return (
+                    <option key={index} value={group}>
+                      {group}
+                    </option>
+                  );
+                })}
               </select>
               <p className={styles.error__message}>
                 {errors.introduction?.message}
@@ -142,13 +156,18 @@ const Entry = () => {
                 上記でその他と回答した方に質問です。UFESのことを、どのようにしてお知りになりましたか。(※その他以外の回答の方は未入力で大丈夫です。)
               </label>
               <select {...register("how_to_known")}>
-                {["ウェブサイト", "友人", "チラシ", "広告", "その他"].map(
-                  (organization, index) => (
-                    <option key={index} value={organization}>
-                      {organization}
-                    </option>
-                  )
-                )}
+                {[
+                  "選択",
+                  "ウェブサイト",
+                  "友人",
+                  "チラシ",
+                  "広告",
+                  "その他",
+                ].map((organization, index) => (
+                  <option key={index} value={organization}>
+                    {organization}
+                  </option>
+                ))}
               </select>
               <p className={styles.error__message}>
                 {errors.how_to_known?.message}
@@ -243,6 +262,13 @@ function provideUrlEncodedFormData(
   for (const key of Object.keys(originalFormData)) {
     result[formFieldNames[key]] = originalFormData[key];
   }
+
+  // TODO 相談 より厳密に管理したい場合entry番号で指定する
+  Object.keys(result).map((k) => {
+    if (result[k] === "選択") {
+      delete result[k];
+    }
+  });
 
   return new URLSearchParams(result).toString();
 }
