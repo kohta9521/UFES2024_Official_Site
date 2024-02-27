@@ -43,5 +43,80 @@
       { "type": "Twitter", "url": "https://twitter.com/spectech_ai" },
       { "type": "Instagram", "url": "https://www.instagram.com/spectech_ai/" }
     ]
+  },
+  {
+    "id": 5,
+    "img": "/images/logo/community/carutena.jpg",
+    "genre": "fashion",
+    "name": "carutena",
+    "snsLinks": [
+      { "type": "Website", "url": "https://carutena.com/" },
+      {
+        "type": "Twitter",
+        "url": "https://twitter.com/i/flow/login?redirect_after_login=%2Fcarutena"
+      },
+      {
+        "type": "Instagram",
+        "url": "https://www.instagram.com/carutena_information/"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "img": "/images/logo/community/namimati.jpg",
+    "genre": "environment",
+    "name": "NAMIMATI",
+    "snsLinks": [
+      { "type": "Website", "url": "https://www.shonan-namimati.com/" },
+      { "type": "Instagram", "url": "https://www.instagram.com/namimati134/" }
+    ]
+  },
+  {
+    "id": 7,
+    "img": "/images/logo/community/aysinc.jpg",
+    "genre": "cleative",
+    "name": "aysinc",
+    "snsLinks": [
+      { "type": "Instagram", "url": "https://www.instagram.com/aysinc.tyo/" }
+    ]
+  },
+  {
+    "id": 8,
+    "img": "/images/logo/community/irori.jpg",
+    "genre": "environment",
+    "name": "学生団体いろり",
+    "snsLinks": [
+      { "type": "Website", "url": "https://irori-japan.com/" },
+      { "type": "Twitter", "url": "https://twitter.com/irorijp" },
+      {
+        "type": "Instagram",
+        "url": "https://www.instagram.com/irori_noringyoufes/"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "img": "/images/logo/community/ust.jpg",
+    "genre": "global",
+    "name": "`UST`",
+    "snsLinks": [
+      {
+        "type": "Instagram",
+        "url": "https://www.instagram.com/uni.students.tour/?igsh=MXR5cHlwaW9qbm04bA%3D%3D"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "img": "/images/logo/community/olly.jpg",
+    "genre": "social",
+    "name": "Olly",
+    "snsLinks": [
+      { "type": "Website", "url": "https://www.olly3.com/" },
+      {
+        "type": "Instagram",
+        "url": "https://www.instagram.com/olly.shibuya/"
+      }
+    ]
   }
 ]
