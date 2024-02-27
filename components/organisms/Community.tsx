@@ -15,6 +15,12 @@ const Community = () => {
   const community1 = communitiesData[1] as CommunityCardProps;
   const community2 = communitiesData[2] as CommunityCardProps;
   const community3 = communitiesData[3] as CommunityCardProps;
+  const community4 = communitiesData[4] as CommunityCardProps;
+  const community5 = communitiesData[5] as CommunityCardProps;
+  const community6 = communitiesData[6] as CommunityCardProps;
+  const community7 = communitiesData[7] as CommunityCardProps;
+  const community8 = communitiesData[8] as CommunityCardProps;
+  const community9 = communitiesData[9] as CommunityCardProps;
   return (
     <div className={styles.community}>
       <div className={styles.container}>
@@ -59,6 +65,57 @@ const Community = () => {
                 genre={community3.genre}
                 name={community3.name}
                 snsLinks={community3.snsLinks}
+              />
+            </div>
+            <div className={styles.flexBox} data-aos="fade-up">
+              <CommunityCard
+                id={community4.id}
+                img={community4.img}
+                genre={community4.genre}
+                name={community4.name}
+                snsLinks={community4.snsLinks}
+              />
+              <CommunityCard
+                key={community5.id}
+                id={community5.id}
+                img={community5.img}
+                genre={community5.genre}
+                name={community5.name}
+                snsLinks={community5.snsLinks}
+              />
+            </div>
+            <div className={styles.flexBox} data-aos="fade-up">
+              <CommunityCard
+                id={community6.id}
+                img={community6.img}
+                genre={community6.genre}
+                name={community6.name}
+                snsLinks={community6.snsLinks}
+              />
+              <CommunityCard
+                key={community7.id}
+                id={community7.id}
+                img={community7.img}
+                genre={community7.genre}
+                name={community7.name}
+                snsLinks={community7.snsLinks}
+              />
+            </div>
+            <div className={styles.flexBox} data-aos="fade-up">
+              <CommunityCard
+                id={community8.id}
+                img={community8.img}
+                genre={community8.genre}
+                name={community8.name}
+                snsLinks={community8.snsLinks}
+              />
+              <CommunityCard
+                key={community9.id}
+                id={community9.id}
+                img={community9.img}
+                genre={community9.genre}
+                name={community9.name}
+                snsLinks={community9.snsLinks}
               />
             </div>
           </div>
