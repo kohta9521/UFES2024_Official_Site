@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+// import { useState } from "react";
 import React from "react";
 import Image from "next/image";
 
@@ -14,19 +14,19 @@ import TopVerticalText from "../atoms/TopVerticalText";
 import ScrollDownText from "../atoms/ScrollDownText";
 import TopListBox from "../molecules/TopListBox";
 import SnsBox from "../molecules/SnsBox";
-import HamburgerBtn from "../atoms/HamburgerBtn";
+// import HamburgerBtn from "../atoms/HamburgerBtn";
 import EntryButton from "../atoms/EntryButton";
 
 const Top = () => {
   useAOS();
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggle = () => {
+  //   setIsOpen(!isOpen);
+  // };
   return (
     <div className={styles.top}>
-      <HamburgerBtn isOpen={false} toggle={toggle} />
+      {/* <HamburgerBtn isOpen={false} toggle={toggle} /> */}
       <TopVerticalText
         id={1}
         text="春の大学生イベントを一つのカルチャーに"
