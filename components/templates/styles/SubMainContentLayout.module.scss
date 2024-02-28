@@ -2,13 +2,19 @@
   width: 100%;
 
   .hero {
-    width: 60%;
-    height: 380px;
-    margin: 0 auto;
+    width: 90%;
+    height: 300px;
+    border-radius: 20px;
+    margin: 40px auto;
+    padding: 30px;
     padding-top: 100px;
+    background-image: url("/images/pc_back.png");
+    background-size: cover;
+    background-position: bottom;
     .title {
-      font-size: 140px;
-      color: var(--main-pink);
+      font-size: 130px;
+      line-height: 140px;
+      color: var(--main-black-color);
     }
     .desc {
       font-size: 20px;
@@ -26,11 +32,12 @@
     width: 100%;
     .hero {
       width: 95%;
-      height: 400px;
+      height: 150px;
+      padding: 30px;
       margin: 0 auto;
-      padding-top: 100px;
       .title {
         font-size: 50px;
+        line-height: 60px;
       }
       .desc {
         font-size: 10px;
@@ -39,28 +46,6 @@
     }
     .content {
       width: 80%;
-      margin: 0 auto;
-    }
-  }
-}
-@media screen and (max-width: 768px) {
-  .mainContent {
-    width: 100%;
-    .hero {
-      width: 95%;
-      height: 280px;
-      margin: 0 auto;
-      padding-top: 70px;
-      .title {
-        font-size: 50px;
-      }
-      .desc {
-        font-size: 10px;
-        font-weight: bold;
-      }
-    }
-    .content {
-      width: 95%;
       margin: 0 auto;
     }
   }
