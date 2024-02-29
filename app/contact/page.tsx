@@ -7,7 +7,6 @@ import styles from "./Contact.module.scss";
 // components import
 import SubPageLayout from "@/components/templates/SubPageLayout";
 import SubMainContentLayout from "@/components/templates/SubMainContentLayout";
-import BgImage from "@/components/organisms/BgImage";
 
 const Contact = () => {
   // formの切り替え
@@ -15,7 +14,6 @@ const Contact = () => {
 
   return (
     <div className={styles.contact}>
-      <BgImage />
       <SubPageLayout id={2}>
         <SubMainContentLayout
           title="Contect"
