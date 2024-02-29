@@ -15,7 +15,6 @@ const Contact = () => {
 
   return (
     <div className={styles.contact}>
-      <BgImage />
       <SubPageLayout id={2}>
         <SubMainContentLayout
           title="Contect"

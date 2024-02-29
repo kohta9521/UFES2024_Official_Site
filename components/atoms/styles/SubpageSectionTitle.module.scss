@@ -2,15 +2,14 @@
   display: block;
   max-width: 200px;
   height: 50px;
-  text-align: center;
   padding: 10px 30px;
-  border-radius: 10px;
-  background-color: var(--main-pink);
   margin-bottom: 20px;
+  border-bottom: 4px solid var(--main-pink);
   .titleText {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
-    color: white;
+    color: black;
+    font-weight: bold;
   }
 }
 

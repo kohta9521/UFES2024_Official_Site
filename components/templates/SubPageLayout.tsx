@@ -5,7 +5,7 @@ import styles from "./styles/SubPageLayout.module.scss";
 
 // components import
 import Header from "../molecules/Header";
-// import Footer from "../organisms/Footer";
+import Footer from "../organisms/Footer";
 
 // type props
 export type SubPageLayoutProps = {
@@ -18,7 +18,7 @@ const SubPageLayout = ({ id, children }: SubPageLayoutProps) => {
     <div className={styles.layout} key={id}>
       <Header />
       <div className={styles.container}>{children}</div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
