@@ -156,6 +156,7 @@ const Community = () => {
                 snsLinks={community13.snsLinks}
               />
             </div>
+            {/* この下に団体を追加していく */}
           </div>
           <div className={styles.rightBox} data-aos="fade-up">
             <p className={styles.titleText}>参加団体一覧</p>
