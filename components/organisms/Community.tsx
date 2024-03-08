@@ -21,6 +21,8 @@ const Community = () => {
   const community7 = communitiesData[7] as CommunityCardProps;
   const community8 = communitiesData[8] as CommunityCardProps;
   const community9 = communitiesData[9] as CommunityCardProps;
+  const community10 = communitiesData[10] as CommunityCardProps;
+  const community11 = communitiesData[11] as CommunityCardProps;
   return (
     <div className={styles.community}>
       <div className={styles.container}>
@@ -116,6 +118,23 @@ const Community = () => {
                 genre={community9.genre}
                 name={community9.name}
                 snsLinks={community9.snsLinks}
+              />
+            </div>
+            <div className={styles.flexBox} data-aos="fade-up">
+              <CommunityCard
+                id={community10.id}
+                img={community10.img}
+                genre={community10.genre}
+                name={community10.name}
+                snsLinks={community10.snsLinks}
+              />
+              <CommunityCard
+                key={community11.id}
+                id={community11.id}
+                img={community11.img}
+                genre={community11.genre}
+                name={community11.name}
+                snsLinks={community11.snsLinks}
               />
             </div>
           </div>

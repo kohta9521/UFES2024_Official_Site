@@ -2,7 +2,6 @@ import React from "react";
 
 // scss import
 import styles from "./Community.module.scss";
-import BgImage from "@/components/organisms/BgImage";
 import SubPageLayout from "@/components/templates/SubPageLayout";
 import SubMainContentLayout from "@/components/templates/SubMainContentLayout";
 import SubpageSectionTitle from "@/components/atoms/SubpageSectionTitle";
@@ -11,7 +10,6 @@ import SubpageMainText from "@/components/atoms/SubpageMainText";
 const Community = () => {
   return (
     <div className={styles.community}>
-      <BgImage />
       <SubPageLayout id={1}>
         <SubMainContentLayout
           title="Community"

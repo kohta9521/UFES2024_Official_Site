@@ -98,7 +98,7 @@
     "id": 9,
     "img": "/images/logo/community/ust.jpg",
     "genre": "global",
-    "name": "`UST`",
+    "name": "UST",
     "snsLinks": [
       {
         "type": "Instagram",
@@ -116,6 +116,31 @@
       {
         "type": "Instagram",
         "url": "https://www.instagram.com/olly.shibuya/"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "img": "/images/logo/community/k-mic.jpg",
+    "genre": "medical",
+    "name": "k-mic",
+    "snsLinks": [
+      { "type": "Website", "url": "https://www.k-mic.org/" },
+      {
+        "type": "Instagram",
+        "url": "https://www.instagram.com/kmedinnovclub/"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "img": "/images/logo/community/vybe.jpg",
+    "genre": "environment",
+    "name": "vybe",
+    "snsLinks": [
+      {
+        "type": "Instagram",
+        "url": "https://www.instagram.com/vybe_co/"
       }
     ]
   }
