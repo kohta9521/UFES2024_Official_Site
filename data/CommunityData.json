@@ -133,7 +133,7 @@
     ]
   },
   {
-    "id": 11,
+    "id": 12,
     "img": "/images/logo/community/vybe.jpg",
     "genre": "environment",
     "name": "vybe",
@@ -141,6 +141,30 @@
       {
         "type": "Instagram",
         "url": "https://www.instagram.com/vybe_co/"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "img": "/images/logo/community/re-musee.jpg",
+    "genre": "art",
+    "name": "re-musée",
+    "snsLinks": [
+      {
+        "type": "Instagram",
+        "url": "https://www.instagram.com/re_musee?igsh=MXRtNnJrOG03Zm51Mw%3D%3D"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "img": "/images/logo/community/aoc.jpg",
+    "genre": "fashion",
+    "name": "Archives of College",
+    "snsLinks": [
+      {
+        "type": "Instagram",
+        "url": "https://www.instagram.com/archivesofcollege_aoc?igsh=MWRmcmR3YzBiN3AyeQ%3D%3D"
       }
     ]
   }
