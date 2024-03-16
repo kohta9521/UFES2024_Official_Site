@@ -23,6 +23,8 @@ const Community = () => {
   const community9 = communitiesData[9] as CommunityCardProps;
   const community10 = communitiesData[10] as CommunityCardProps;
   const community11 = communitiesData[11] as CommunityCardProps;
+  const community12 = communitiesData[12] as CommunityCardProps;
+  const community13 = communitiesData[13] as CommunityCardProps;
   return (
     <div className={styles.community}>
       <div className={styles.container}>
@@ -137,6 +139,24 @@ const Community = () => {
                 snsLinks={community11.snsLinks}
               />
             </div>
+            <div className={styles.flexBox} data-aos="fade-up">
+              <CommunityCard
+                id={community12.id}
+                img={community12.img}
+                genre={community12.genre}
+                name={community12.name}
+                snsLinks={community12.snsLinks}
+              />
+              <CommunityCard
+                key={community13.id}
+                id={community13.id}
+                img={community13.img}
+                genre={community13.genre}
+                name={community13.name}
+                snsLinks={community13.snsLinks}
+              />
+            </div>
+            {/* この下に団体を追加していく */}
           </div>
           <div className={styles.rightBox} data-aos="fade-up">
             <p className={styles.titleText}>参加団体一覧</p>
