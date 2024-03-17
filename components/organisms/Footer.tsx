@@ -13,8 +13,7 @@ const Footer = () => {
         <div className={styles.leftBox}>
           <p className={styles.name}>主催 : UFES 2024 実行委員会</p>
           <p className={styles.site}>
-            開催地 : 〒106-0032 東京都港区六本木６丁目４−１ ヒルズ ハリウッド
-            プラザ 5F
+            開催地 : 〒150-0041 東京都渋谷区神南１丁目１４−７ ワイズ神南ビル 2階
           </p>
           <p className={styles.mail}>
             E-mail : ufes.freshmenwelcomefes@gmail.com
@@ -25,7 +24,7 @@ const Footer = () => {
             Sponsors : UFES 2024 Executive Committee
           </p>
           <p className={styles.enSite}>
-            Venue : 〒106-0032 Roppongi 6-4-1 Hills Hollywood Plaza 5F
+            Venue : 〒150-0041 shibuya jinnnan waise jinnnan building 2F
           </p>
           <p className={styles.enMail}>
             E-mail : ufes.freshemenwelcomefes@gmail.com
