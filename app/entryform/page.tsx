@@ -55,11 +55,10 @@ const Entry = () => {
           <h1 className={styles.title}>UFES2024 ~春の陣~ 事前参加フォーム</h1>
           <span className={styles.underLine}></span>
           <p className={styles.desc}>
-            先着フォーム記入限定200人!来場
+            先着フォーム記入限定200人!
             <br />
-            特別ギフトプレゼント！ 総合来場想定人数3000人!
+            来場特別ギフトプレゼント！
             <br />
-            六本木ヒルズのホールで日本最大級の合同新歓フェスを開催します！！
             <br />
             50もの憧れの学生団体が1日限定で集い、05,04の代を迎え入れます。
             <br />
