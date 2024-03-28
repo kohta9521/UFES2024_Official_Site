@@ -38,7 +38,7 @@ const Top = () => {
           className={styles.center}
           src="/images/logo/logo-removebg.png"
           alt="centerTitleImage"
-          width={600}
+          width={900}
           height={500}
         />
       </div>
