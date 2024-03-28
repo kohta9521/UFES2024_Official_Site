@@ -36,7 +36,7 @@ const Top = () => {
         <Image
           data-aos="fade-up"
           className={styles.center}
-          src="/images/bg_white_logo2.png"
+          src="/images/logo/logo-removebg.png"
           alt="centerTitleImage"
           width={600}
           height={500}
